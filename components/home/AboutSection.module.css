@@ -1,0 +1,112 @@
+.about_section {
+    position: relative;
+    z-index: 1;
+}
+
+.about_section .AboutSectionBg {
+    z-index: -1;
+}
+
+.about_section .sec_left :is(h2, p) {
+    color: var(--light-color);
+}
+
+.about_section .sec_left h5 {
+    font-weight: 700;
+    margin: 25px 0;
+    color: var(--dark-color);
+    letter-spacing: -1px;
+}
+
+.about_section .sec_left p {
+    height: 125px;
+}
+
+.about_section .sec_left :global(.combo_btn .btn_1),
+.about_section .sec_left :global(.combo_btn .btn_2) {
+    background: var(--light-color);
+}
+
+.about_section .sec_right {
+    position: relative;
+    z-index: 1;
+}
+
+.about_section .sec_right .star_img {
+    width: 431px;
+    height: 435px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(-0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.about_section .sec_right .book_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(0);
+    z-index: 1;
+    transition: var(--cubic);
+}
+
+.about_section .sec_right .book_img_01 {
+    width: 208px;
+    height: 296px;
+    z-index: 3;
+}
+
+.about_section .sec_right:hover .book_img_01 {
+    transform: translate(-50%,-50%) rotate(0);
+}
+
+.about_section .sec_right .book_img_02 {
+    width: 178px;
+    height: 255px;
+    z-index: 2;
+}
+
+.about_section .sec_right:hover .book_img_02 {
+    transform: translate(52%,-50%) rotate(10deg);
+}
+
+.about_section .sec_right .book_img_03 {
+    width: 180px;
+    height: 305px;
+    z-index: 1;
+}
+
+.about_section .sec_right:hover .book_img_03 {
+    transform: translate(-148%,-58%) rotate(-10deg);
+}
+
+.about_section .sec_right .pen_img{
+    width: 141px;
+    height: 140px;
+    position: absolute;
+    bottom: 50px;
+    right: 160px;
+    z-index: 4;
+    animation: jumping 3s linear infinite;
+}
+
+@keyframes jumping {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

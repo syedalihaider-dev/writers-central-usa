@@ -1,0 +1,14 @@
+.our_story_section{
+    background: var(--secondary-color);
+}
+
+.our_story_section .sec_left{
+    width: 630px;
+    height: 497px;
+    position: relative;
+    z-index: 1;
+}
+
+.our_story_section .sec_right :is(h2, p) {
+    color: var(--light-color);
+}

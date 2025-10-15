@@ -1,0 +1,68 @@
+.services_section .sec_content {
+    margin-top: 40px;
+}
+
+.services_section .sec_content .box {
+    background: var(--light-gray-color);
+    padding: 60px 35px;
+    transform: translateY(0);
+    transition: var(--cubic);
+    cursor: pointer;
+}
+
+.services_section .sec_content .box:hover{
+    background: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.services_section .sec_content .box:hover :is(h5, p, :global(.combo_btn) .btn_link){
+    color: var(--light-color);
+}
+
+.services_section .sec_content .box .img{
+    transition: var(--cubic);
+}
+
+.services_section .sec_content .box:hover .img,
+.services_section .sec_content .box:hover :global(.combo_btn) .btn_link img{
+    filter: invert(1);
+}
+
+.services_section .sec_content .box h5 {
+    margin: 25px 0;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.6px;
+    transition: var(--cubic);
+}
+
+.services_section .sec_content .box p{
+    height: 80px;
+    margin-bottom: 0;
+    transition: var(--cubic);
+}
+
+.services_section .sec_content .box :global(.combo_btn){
+    justify-content: start;
+}
+
+.services_section .sec_content .box :global(.combo_btn) .btn_link{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-color);
+    font-weight: 700;
+    letter-spacing: -1px;
+    transition: var(--cubic);
+}
+
+.services_section .sec_content :global(.combo_btn){
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.services_section .sec_content :global(.combo_btn .btn_1) {
+    background: var(--secondary-color);
+    color: var(--light-color);
+}
