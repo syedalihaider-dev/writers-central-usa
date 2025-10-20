@@ -1,0 +1,29 @@
+.testimonials_section{
+    background: #FFF5F4;
+}
+
+.testimonials_section .sec_content{
+margin-top: 60px;
+}
+
+.box{
+    background: var(--light-color);
+    border-radius: 36px;
+    padding: 30px;
+}
+
+.head{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.head h6{
+    margin: 0;
+}
+
+.box p{
+    height: 130px;
+    margin-top: 25px;
+}
