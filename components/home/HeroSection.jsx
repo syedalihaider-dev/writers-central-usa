@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className={styles.hero_section}>
     <Image
-    src="/home/hero-section-bg.png"
+    src="/hero-section-bg.png"
     fill
     alt="Loading Hero Section Background Image"
     fetchPriority="high" 

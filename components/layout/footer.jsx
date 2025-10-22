@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PHONE_NUMBER } from "@/config/config";
-import { EMAIL_ADDRESS } from "@/config/config";
-import styles from "./footer.module.css"
+import { PHONE_NUMBER, DISPLAY_PHONE_NUMBER, EMAIL_ADDRESS } from "@/config/config";
+import styles from "./Footer.module.css"
 
 export default function Footer() {
   return (
@@ -119,7 +118,7 @@ export default function Footer() {
                             <li>
                                 <p>
                                     PHONE : <br />
-                                    <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+                                    <a href={`tel:${PHONE_NUMBER}`}>{DISPLAY_PHONE_NUMBER}</a>
                                 </p>
                             </li>
                         </ul>

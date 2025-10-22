@@ -1,7 +1,8 @@
 // config.jsx
 
 // Phone number
-export const PHONE_NUMBER = "+1-855-720-6963";
+export const PHONE_NUMBER = "+18557206963";
+export const DISPLAY_PHONE_NUMBER = "(855) 720 6963";
 
 // Email
 export const EMAIL_ADDRESS = "info@writerscentralusa.com";

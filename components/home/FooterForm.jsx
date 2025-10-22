@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import ActionButtons from "@/components/ui/ActionButtons";
-import { PHONE_NUMBER } from "@/config/config";
+import { PHONE_NUMBER, DISPLAY_PHONE_NUMBER } from "@/config/config";
 import styles from "./FooterForm.module.css";
 
 export default function FooterForm() {
@@ -30,7 +30,7 @@ export default function FooterForm() {
                         </div>
                         <p>
                             Have Any Questions?
-                            <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+                            <a href={`tel:${PHONE_NUMBER}`}>{DISPLAY_PHONE_NUMBER}</a>
                         </p>
                     </div>
                 </div>

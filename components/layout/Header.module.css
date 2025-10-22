@@ -1,0 +1,152 @@
+.header {
+    width: 100%;
+    padding: 30px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header :global(.container) {
+    max-width: 1600px;
+}
+
+.logo {
+    display: block;
+    width: 293px;
+    height: 46px;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li :is(a, span) {
+    color: var(--light-color);
+}
+
+.menu li a,
+.menu li span {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.menu li a::before,
+.menu li span::before,
+.menu li a::after,
+.menu li span::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) skewX(0deg);
+    z-index: -1;
+    transition: var(--cubic);
+}
+
+.menu li a::before,
+.menu li span::before {
+    left: 0;
+}
+
+.menu li a:hover::before,
+.menu li span:hover::before {
+    width: 53%;
+    transform: translateY(-50%) skewX(-40deg);
+    left: -10px;
+}
+
+.menu li a::after,
+.menu li span::after {
+    right: 0;
+}
+
+.menu li a:hover::after,
+.menu li span:hover::after {
+    width: 53%;
+    transform: translateY(-50%) skewX(-40deg);
+    right: -10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    background: var(--secondary-color);
+    top: 100%;
+    left: 0;
+    min-width: 790px;
+    padding: 30px;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown.open .dropdownMenu {
+    display: block;
+    padding: 15px;
+    column-count: 3;
+    line-height: 40px;
+}
+
+.callBtn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-color);
+}
+
+.callBtn .img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.mobileToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mobileToggle {
+        display: block;
+    }
+}

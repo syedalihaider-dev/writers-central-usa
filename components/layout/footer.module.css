@@ -102,12 +102,13 @@
     color: #A1A1A1;
 }
 
+.ft_right{
+    text-align: end;
+}
+
 .ft_right p{
     color: #A1A1A1;
     margin: 0;
-    display: flex;
-    justify-content: end;
-    align-items: center;
     position: relative;
     z-index: 1;
 }
@@ -118,4 +119,5 @@
 
 .ft_right p img{
     margin-right: 10px;
+    display: inline-block;
 }
