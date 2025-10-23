@@ -1,7 +1,10 @@
-import { servicesData } from "@/data/servicesData";
 import styles from "./page.module.css";
-import { BannerSection, ProcessSection } from "@/components/services/";
+import { BannerSection, ProcessSection, CtaSection, FaqsSection } from "@/components/services/";
 import PartnersSection from "@/components/home/PartnersSection";
+import AuthorBrandingSection from "@/components/home/AuthorBrandingSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
+import FooterForm from "@/components/home/FooterForm";
+import { servicesData } from "@/data/servicesData";
 
 export async function generateStaticParams() {
   return Object.keys(servicesData).map((slug) => ({ slug }));
@@ -40,6 +43,11 @@ export default function ServicePage({ params }) {
       <BannerSection data={service.banner} />
       <PartnersSection />
       <ProcessSection data={service.process} />
+      <CtaSection data={service.cta} />
+      <AuthorBrandingSection data={service.authorBranding} />
+      <FaqsSection data={service.faqsData} />
+      <TestimonialsSection />
+      <FooterForm />
     </div>
   );
 }

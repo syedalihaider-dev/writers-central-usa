@@ -41,6 +41,13 @@ export default function ProcessSection({ data }) {
 
   return (
     <section className={`${styles.process_section} sec_padding`}>
+      <Image
+      src="/layers-bg.png"
+      fill
+      alt="Loading Section Background Image" 
+      className={styles.section_bg}
+      style={{ objectFit: "cover" }}
+      />
       <div className="container">
         <div className={styles.sec_top}>
           <div className="container">
