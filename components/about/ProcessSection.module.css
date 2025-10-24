@@ -1,0 +1,120 @@
+.process_section {
+    position: relative;
+    z-index: 1;
+}
+
+.sec_left {
+    width: 48%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+}
+
+.box {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    z-index: 1;
+    transition: var(--cubic);
+    cursor: pointer;
+}
+
+.box h6 {
+    font-size: 28px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.inner_box {
+    width: 100%;
+    height: 456px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.inner_box_after {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 12px;
+    padding: 25px;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: 2;
+    transition: var(--cubic);
+}
+
+.box:hover .inner_box_after{
+    bottom: 0;
+}
+
+.inner_box_after h6 {
+    position: unset;
+    text-align: left;
+    color: var(--light-color);
+    margin: 0;
+}
+
+.inner_box_after p {
+    height: 150px;
+    margin: 20px 0;
+    color: var(--light-color);
+}
+
+.process_btn {
+    width: 130px;
+    height: 130px;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.process_btn .icon {
+    width: 119px;
+    height: 119px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: 2;
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.sec_right {
+    padding: 250px 0;
+}
+
+.sec_right h2{
+    font-size: 58px;
+}
+
+.sec_right p{
+    margin: 25px 0;
+}

@@ -17,31 +17,23 @@ export default function Home() {
     items: [
       {
         icon: "/home/author-icon-01.png",
-        alt: "Be Recognized",
         heading: "Be <br/>Recognized",
         text: "A unique brand helps readers instantly recognize your work, making your books stand out.",
-        cta: "Get Started"
       },
       {
         icon: "/home/author-icon-02.png",
-        alt: "Keep Readers Engaged",
         heading: "Keep Your <br/>Readers Engaged",
         text: "A well-developed brand keeps readers engaged between releases.",
-        cta: "Get Started"
       },
       {
         icon: "/home/author-icon-03.png",
-        alt: "Thought Leader",
         heading: "Become a <br/>Thought Leader",
         text: "Position yourself as a thought leader with a powerful author brand.",
-        cta: "Get Started"
       },
       {
         icon: "/home/author-icon-04.png",
-        alt: "Emotional Connection",
         heading: "Build an Emotional <br/>Connection",
         text: "Let your readers connect with you on a deeper, personal level.",
-        cta: "Get Started"
       }
     ]
   };

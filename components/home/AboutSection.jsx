@@ -41,7 +41,7 @@ export default function AboutSection() {
                 <div className={styles.sec_right}>
                     <div className={styles.star_img}>
                         <Image
-                        src="/home/star-img.png"
+                        src="/star-img.png"
                         fill
                         alt="Loading Star Image" 
                         style={{ objectFit: "contain" }}

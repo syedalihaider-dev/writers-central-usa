@@ -1,10 +1,8 @@
-"use client";
 import Image from "next/image";
 import styles from "./BannerSection.module.css";
-import ActionButtons from "@/components/ui/ActionButtons"
+import ActionButtons from "@/components/ui/ActionButtons";
 
-export default function BannerSection({ data }) {
-const { title, heading, highlight, description} = data;
+export default function BannerSection({}) {
 
 return (
 <section className={styles.banner}>
@@ -19,12 +17,8 @@ return (
     <div className="row justify-content-center">
       <div className="col-sm-12 col-md-10">
         <div className={` ${styles.content} text-center`}>
-          <h6 className="primarytxt">{title}</h6>
-          <h1>
-            {heading} <span className="break_line"></span>
-            <span className="primarytxt"> {highlight}</span> 
-          </h1>
-          <p>{description}</p>
+          <h1 className="primarytxt">About Us</h1>
+          <p>Empowering authors across the U.S. with publishing, branding, and marketing solutions tailored for success.</p>
           <div className="combo_btn">
             <ActionButtons />
           </div>

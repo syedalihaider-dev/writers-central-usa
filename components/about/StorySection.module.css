@@ -1,0 +1,36 @@
+.sec_left p{
+    margin: 20px 0;
+}
+
+.sec_right{
+    position: relative;
+    z-index: 1;
+}
+
+.sec_right .star_img {
+    width: 491px;
+    height: 491px;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(-0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.sec_right .img{
+    width: 511px;
+    height: 508px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+} 
