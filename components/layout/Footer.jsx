@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PHONE_NUMBER, DISPLAY_PHONE_NUMBER, EMAIL_ADDRESS } from "@/config/config";
-import styles from "./Footer.module.css"
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
