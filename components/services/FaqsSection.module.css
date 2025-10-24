@@ -10,6 +10,7 @@
 .faqs_section h2,
 .faqs_section h6 {
     color: var(--light-color);
+    margin: 0;
 }
 
 .faq_item {
@@ -25,6 +26,17 @@
 
 .faq_item:hover {
     background: #24395e;
+}
+
+.faq_question_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
 }
 
 .faq_question {
@@ -47,6 +59,23 @@
     color: #d1d5db;
     font-size: 15px;
     line-height: 1.6;
+}
+
+.faq_answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.faq_answer p{
+    color: var(--light-color);
+    margin: 0;
+}
+
+.faq_answer.open {
+  max-height: 300px;
+  opacity: 1;
 }
 
 .active {

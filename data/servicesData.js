@@ -80,31 +80,30 @@ export const servicesData = {
     },
 
     faqsData: {
-      title: "Your Name. Your Brand. Your Legacy.",
-      subtitle: "",
+      title: "We’re here to answer all your questions.",
       faqs: [{
           question: "What exactly are ghostwriting services?",
-          answer: "We start by analyzing the market, assessing target audience, and setting a unique writing strategy.",
+          answer: "Ghostwriting services involve hiring a professional writer to create content, such as books, articles, or speeches, credited to another person as the author. At Writers Central USA, our ghostwriters collaborate closely with clients to understand their vision and voice, ensuring the final product is authentic and high-quality, making us a trusted ghost writing agency. Our process is designed to be seamless, with regular communication and feedback to ensure your satisfaction. Whether you need a full book or specific content, our ghostwriting services in USA deliver exceptional results tailored to your needs.",
         },
         {
-          question: "How do ghostwriting services work?",
-          answer: "Our team collaborates with you to understand your voice, tone, and message to craft content that feels authentic.",
+          question: "How can I hire ghostwriting services from Writers Central USA?",
+          answer: "Hiring our ghostwriting services is straightforward. Start by contacting us through our website or phone to discuss your project, and we’ll match you with a suitable ghostwriter based on your genre and requirements. Our team guides you through every step, from consultation to final manuscript delivery. We pride ourselves on our personalized approach, ensuring that your experience with our ghost writing services is smooth and productive. Reach out today to begin your publishing journey with confidence.",
         },
         {
-          question: "Who owns the rights to the content?",
-          answer: "You own 100% of the content. Our writers work under strict confidentiality agreements.",
+          question: "What makes Writers Central USA the best ghostwriting services provider?",
+          answer: "Our commitment to quality, personalized approach, and extensive experience set us apart as a leading ghost writing agency. Our team of skilled writers spans various genres, prioritizing your unique needs to deliver exceptional manuscripts that achieve your publishing goals. Clients choose us for our ability to capture their voice and deliver professional results. If you’re looking for the best ghostwriting services, contact us to see how we can bring your story to life.",
         },
         {
-          question: "Can I choose my writer?",
-          answer: "Yes, you can review profiles and select the writer whose style fits your vision best.",
+          question: "Are there affordable ghostwriting services available?",
+          answer: "Yes, Writers Central USA offers affordable ghostwriting services without compromising quality. We provide flexible packages to suit different budgets, ensuring that professional ghostwriting is accessible to all aspiring authors. Our competitive pricing, combined with our commitment to excellence, makes us a top choice for those seeking high-quality yet affordable ghost writing. Get in touch to explore our pricing options.",
         },
         {
-          question: "How long does it take to complete a project?",
-          answer: "Project timelines vary depending on length and complexity but are always discussed upfront.",
+          question: "What is the difference between cheap ghostwriting services and premium ghost writing?",
+          answer: "Cheap ghostwriting services often cut corners on quality, experience, or reliability, potentially leading to subpar results. In contrast, our premium ghost writing at Writers Central USA involves experienced writers who deliver top-notch content, personalized service, and a deep understanding of the publishing industry. Investing in premium ghostwriting ensures a manuscript that meets professional standards and aligns with your vision. Contact us to learn how our premium services can elevate your project.",
         },
         {
-          question: "Do you provide revisions?",
-          answer: "Yes, we offer multiple revision rounds to ensure the final piece meets your expectations.",
+          question: "Do you provide ghostwriting services in the USA?",
+          answer: "Absolutely, Writers Central USA is based in the United States and offers ghostwriting services to clients domestically and internationally. Our team is well-versed in American English and cultural nuances, ensuring your content resonates with your target audience. As a leading provider of ghostwriting services in the USA, we’re committed to delivering manuscripts that meet your expectations. Reach out to discuss your project today.",
         },
       ],
     },

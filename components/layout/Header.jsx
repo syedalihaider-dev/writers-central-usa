@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -80,8 +79,6 @@ export default function Header() {
                     src="/call-icon.png" 
                     fill 
                     alt="Loading Icon" 
-                    fetchPriority="high" 
-                    priority 
                     style={{ objectFit: "contain" }} 
                     /> 
                 </div>
