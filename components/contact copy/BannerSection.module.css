@@ -1,0 +1,33 @@
+.banner {
+    padding: 250px 0 200px;
+    position: relative;
+    z-index: 1
+}
+
+.banner .bannerBg {
+    z-index: -2
+}
+
+.content h1 {
+    font-size: 185px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 182px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.content p {
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.content :global(.combo_btn) {
+    justify-content: center;
+}
+
+/* :global(.ghostwriting-writing) .banner .sec_left {
+    padding: 300px 0 140px
+} */
