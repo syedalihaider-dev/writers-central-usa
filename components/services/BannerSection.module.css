@@ -9,6 +9,7 @@
 }
 
 .content h6 {
+    text-transform: capitalize;
     font-size: 30px;
     line-height: 30px;
     letter-spacing: -0.3px;
