@@ -1,0 +1,27 @@
+.banner_section {
+    padding: 300px 0 256px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_section .HeroSectionBg {
+    z-index: -1;
+}
+
+.banner_section .banner_content h1 {
+    color: var(--primary-color);
+    font-size: 185px;
+    font-weight: 700;
+    line-height: 182px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.banner_section .banner_content p {
+    color: var(--light-color);
+    margin: 25px 0;
+}
+
+.banner_section .banner_content :global(.combo_btn) {
+    justify-content: center;
+}
