@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ActionButtons() {
   return (
     <>
-      <button type="button" className="mybtn btn_1 popup-btn">
+      <button type="button" className="mybtn btn_1 popup_btn">
         <div className="icon">
           <Image 
             src="/get-started-btn.png"

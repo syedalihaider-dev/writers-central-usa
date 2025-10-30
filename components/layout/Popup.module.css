@@ -1,0 +1,281 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.popup {
+    width: 1000px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.popup .PopupBg {
+    z-index: -1;
+}
+
+.popup .closeBtn {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 50px;
+    font-size: 30px;
+    color: var(--light-color);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.popup .popup_left {
+    width: 50%;
+}
+
+.popup .popup_left h2 {
+    color: var(--primary-color);
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -4px;
+}
+
+.popup .popup_left h2 span {
+    display: block;
+    color: var(--primary-color);
+}
+
+.popup .popup_left p {
+    color: var(--light-color);
+    font-weight: 300;
+    line-height: 22px;
+    margin: 15px 0 0;
+}
+
+.popup .popup_left form .form_group {
+    margin-top: 25px;
+}
+
+.popup .popup_left form .form_group label {
+    display: block;
+    color: var(--light-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.popup .popup_left form .form_group input,
+.popup .popup_left form .form_group textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(211, 211, 211, 0.60);
+    color: var(--dark-color);
+    background: #FFF;
+    box-shadow: 0 2.874px 15.091px 0 rgba(54, 54, 54, 0.11) inset;
+}
+
+.popup .popup_left form .form_group textarea {
+    height: 100px;
+    resize: unset;
+}
+
+.popup .popup_left form .form_group input::placeholder,
+.popup .popup_left form .form_group textarea::placeholder {
+    color: #A0A0A0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.popup .popup_left form :global(.mybtn) {
+    margin-top: 25px;
+}
+
+.popup .popup_right {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.popup .popup_right .popup_right_img {
+    width: 385px;
+    height: 720px;
+}
+
+@media screen and (max-width:1600px) {
+    .popup {
+        width: 1000px;
+        padding: 25px;
+    }
+
+    .popup .popup_left h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .popup .popup_left p {
+        margin: 10px 0 0;
+    }
+
+    .popup .popup_left form .form_group,
+    .popup .popup_left form :global(.mybtn) {
+        margin-top: 20px;
+    }
+
+    .popup .popup_left form .form_group input,
+    .popup .popup_left form .form_group textarea {
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .popup .popup_left form .form_group textarea {
+        height: 80px;
+    }
+
+    .popup .popup_right {
+        right: -100px;
+    }
+
+    .popup .popup_right .popup_right_img {
+        width: 685px;
+        height: 640px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .popup {
+        width: 880px;
+        padding: 25px;
+    }
+
+    .popup .closeBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .popup .popup_left h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .popup .popup_left form .form_group,
+    .popup .popup_left form :global(.mybtn) {
+        margin-top: 15px;
+    }
+
+    .popup .popup_left form .form_group label {
+        font-size: 12px;
+    }
+
+    .popup .popup_left form .form_group input,
+    .popup .popup_left form .form_group textarea {
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .popup .popup_left form .form_group textarea {
+        height: 65px;
+    }
+
+    .popup .popup_right {
+        right: -85px;
+    }
+
+    .popup .popup_right .popup_right_img {
+        width: 600px;
+        height: 560px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .popup {
+        width: 700px;
+        padding: 25px 20px;
+    }
+
+    .popup .closeBtn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .popup .popup_left h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .popup .popup_left p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .popup .popup_right {
+        right: -85px;
+    }
+
+    .popup .popup_right .popup_right_img {
+        width: 500px;
+        height: 465px;
+    }
+
+    .popup .popup_left form :global(.mybtn .text) {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .popup {
+        width: 500px;
+    }
+
+    .popup .popup_left {
+        width: 100%;
+    }
+
+    .popup .popup_left h2 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -2px;
+    }
+
+    .popup .popup_left p,
+    .popup .popup_left form .form_group label {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .popup .popup_right {
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .popup {
+        width: 315px;
+        padding: 15px;
+        border-radius: 0px;
+    }
+
+    .popup .closeBtn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        border-radius: 0;
+        top: 0px;
+        right: 0px;
+    }
+}

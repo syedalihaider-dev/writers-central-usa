@@ -40,15 +40,15 @@ export default function Header() {
                 >
                   <span className={styles.dropdownToggle}>Services</span>
                   <ul className={styles.dropdownMenu}>
-                    <li><Link href="/services/ghostwriting-writing">Ghostwriting Writing</Link></li>
-                    <li><Link href="/services/book-editing-and-proofreading">Book Editing & Proofreading</Link></li>
+                    <li><Link href="/services/ghostwriting-writing-services">Ghostwriting Writing</Link></li>
+                    <li><Link href="/services/book-editing-and-proofreading-services">Book Editing & Proofreading</Link></li>
                     <li><Link href="/services/book-cover-design-services">Book Cover Design</Link></li>
                     <li><Link href="/services/book-formatting-services">Book Formatting</Link></li>
-                    <li><Link href="/services/book-publishing">Book Publishing</Link></li>
+                    <li><Link href="/services/book-publishing-services">Book Publishing</Link></li>
                     <li><Link href="/services/book-illustration-services">Book Illustration</Link></li>
-                    <li><Link href="/services/book-marketing">Book Marketing</Link></li>
+                    <li><Link href="/services/book-marketing-services">Book Marketing</Link></li>
                     <li><Link href="/services/book-trailer-services">Book Trailer</Link></li>
-                    <li><Link href="/services/book-printing">Book Printing</Link></li>
+                    <li><Link href="/services/book-printing-services">Book Printing</Link></li>
                   </ul>
                 </li>
                 <li

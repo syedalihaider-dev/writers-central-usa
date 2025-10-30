@@ -1,0 +1,42 @@
+.banner {
+    padding: 250px 0 200px;
+    position: relative;
+    z-index: 1
+}
+
+.banner .bannerBg {
+    z-index: -2
+}
+
+.content h6 {
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.3px;
+}
+
+.content h1 {
+    color: var(--light-color);
+    font-size: 85px;
+    line-height: 83px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.content h1 span {
+    font-size: 110px;
+    line-height: 109.629px;
+    letter-spacing: -2px;
+}
+
+.content p{
+    color: var(--light-color);
+}
+
+.content :global(.combo_btn){
+    justify-content: center;
+}
+
+/* :global(.ghostwriting-writing) .banner .sec_left {
+    padding: 300px 0 140px
+} */

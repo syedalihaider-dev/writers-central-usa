@@ -15,42 +15,42 @@ const SERVICES = [
     title: "Book <br>Marketing", 
     icon: "/home/book-marketing-icon.png", 
     excerpt: "We boost book visibility and sales with targeted marketing campaigns.", 
-    href: "/services/#!" 
+    href: "/services/book-marketing-services" 
   },
   { 
     id: 2, 
     title: "Author <br>Website", 
     icon: "/home/author-website.png", 
     excerpt: "Custom author websites to showcase your brand and sell your books.", 
-    href: "/services/#!" 
+    href: "/author-centric/author-website" 
   },
   { 
     id: 3, 
     title: "Social Media <br>Marketing", 
     icon: "/home/smm-icon.png", 
     excerpt: "End-to-end book launch plans that generate buzz & reviews quickly.", 
-    href: "/services/#!" 
+    href: "/author-centric/social-media-marketing" 
   },
   { 
     id: 4, 
     title: "Author <br>Profiling", 
     icon: "/home/author-profiling-icon.png", 
     excerpt: "Strategic social media campaigns tailored for authors and books.", 
-    href: "/services/#!" 
+    href: "/author-centric/author-profiling" 
   },
   { 
     id: 5, 
     title: "SEO <br>Marketing", 
     icon: "/home/seo-marketing-icon.png", 
     excerpt: "Get featured in media, podcasts and book blogs to reach new readers.", 
-    href: "/services/#!" 
+    href: "/author-centric/search-engine-optimization" 
   },
   { 
     id: 6, 
     title: "Author <br>Branding", 
     icon: "/home/author-website.png", 
     excerpt: "Professional editing packages to polish your manuscript for publication.", 
-    href: "/services/#!" 
+    href: "/author-centric/author-branding" 
   },
 ];
 
