@@ -1,6 +1,7 @@
 .about_section {
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .about_section .AboutSectionBg {
@@ -42,19 +43,20 @@
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(-0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(-360deg);
     }
 }
 
-.about_section .sec_right .book_img{
+.about_section .sec_right .book_img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
     z-index: 1;
     transition: var(--cubic);
 }
@@ -66,7 +68,7 @@
 }
 
 .about_section .sec_right:hover .book_img_01 {
-    transform: translate(-50%,-50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
 }
 
 .about_section .sec_right .book_img_02 {
@@ -76,7 +78,7 @@
 }
 
 .about_section .sec_right:hover .book_img_02 {
-    transform: translate(52%,-50%) rotate(10deg);
+    transform: translate(52%, -50%) rotate(10deg);
 }
 
 .about_section .sec_right .book_img_03 {
@@ -86,10 +88,10 @@
 }
 
 .about_section .sec_right:hover .book_img_03 {
-    transform: translate(-148%,-58%) rotate(-10deg);
+    transform: translate(-148%, -58%) rotate(-10deg);
 }
 
-.about_section .sec_right .pen_img{
+.about_section .sec_right .pen_img {
     width: 141px;
     height: 140px;
     position: absolute;
@@ -100,13 +102,58 @@
 }
 
 @keyframes jumping {
-    0%{
+    0% {
         transform: translateY(0px);
     }
-    50%{
+
+    50% {
         transform: translateY(-10px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
 }
+
+@media screen and (max-width:1600px) {}
+
+@media screen and (max-width:1399px) {
+    .about_section .sec_right .star_img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .about_section .sec_left h2 {
+        line-height: 45px;
+    }
+
+    .about_section .sec_right .book_img_01 {
+        width: 170px;
+        height: 240px;
+    }
+
+    .about_section .sec_right .book_img_02 {
+        width: 155px;
+        height: 219px;
+    }
+
+    .about_section .sec_right .book_img_03 {
+        width: 150px;
+        height: 254px;
+    }
+
+    .about_section .sec_right .pen_img {
+        width: 81px;
+        height: 80px;
+        bottom: 90px;
+        right: 130px;
+    }
+}
+
+@media screen and (max-width:991px) {}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {}

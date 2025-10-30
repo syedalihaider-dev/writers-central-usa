@@ -321,6 +321,10 @@ p {
     font-size: 20px;
   }
 
+  .mybtn .text{
+    width: 90px;
+  }
+
   .sec_padding {
     padding: 40px 0;
   }
