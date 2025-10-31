@@ -4,7 +4,7 @@ import styles from "./AboutSection.module.css"
 
 export default function AboutSection() {
   return (
-    <section className={` ${styles.about_section} sec_padding`}>
+    <section className={`${styles.about_section} sec_padding`}>
     <Image
     src="/home/about-section-bg.png"
     fill

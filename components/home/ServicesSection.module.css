@@ -1,3 +1,7 @@
+.services_section {
+    overflow: hidden;
+}
+
 .services_section .sec_content {
     margin-top: 40px;
 }
@@ -10,21 +14,21 @@
     cursor: pointer;
 }
 
-.services_section .sec_content .box:hover{
+.services_section .sec_content .box:hover {
     background: var(--primary-color);
     transform: translateY(-5px);
 }
 
-.services_section .sec_content .box:hover :is(h5, p, :global(.combo_btn) .btn_link){
+.services_section .sec_content .box:hover :is(h5, p, :global(.combo_btn) .btn_link) {
     color: var(--light-color);
 }
 
-.services_section .sec_content .box .img{
+.services_section .sec_content .box .img {
     transition: var(--cubic);
 }
 
 .services_section .sec_content .box:hover .img,
-.services_section .sec_content .box:hover :global(.combo_btn) .btn_link img{
+.services_section .sec_content .box:hover :global(.combo_btn) .btn_link img {
     filter: invert(1);
 }
 
@@ -36,17 +40,17 @@
     transition: var(--cubic);
 }
 
-.services_section .sec_content .box p{
+.services_section .sec_content .box p {
     height: 80px;
     margin-bottom: 0;
     transition: var(--cubic);
 }
 
-.services_section .sec_content .box :global(.combo_btn){
+.services_section .sec_content .box :global(.combo_btn) {
     justify-content: start;
 }
 
-.services_section .sec_content .box :global(.combo_btn) .btn_link{
+.services_section .sec_content .box :global(.combo_btn) .btn_link {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -57,7 +61,7 @@
     transition: var(--cubic);
 }
 
-.services_section .sec_content :global(.combo_btn){
+.services_section .sec_content :global(.combo_btn) {
     justify-content: center;
     margin-top: 50px;
 }
@@ -66,3 +70,53 @@
     background: var(--secondary-color);
     color: var(--light-color);
 }
+
+@media screen and (max-width:1600px) {
+    .services_section .sec_content .box {
+        padding: 40px 25px;
+    }
+
+    .services_section .sec_content :global(.combo_btn) {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .services_section .sec_content .box h5 {
+        margin: 20px 0;
+        line-height: 25px;
+        letter-spacing: 0px;
+    }
+
+    .services_section .sec_content :global(.combo_btn) {
+        margin-top: 25px;
+    }
+
+    .services_section .sec_content .box :global(.combo_btn) .btn_link {
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .services_section .sec_content .box p {
+        height: 55px;
+    }
+}
+
+@media screen and (max-width:991px) {}
+
+@media screen and (max-width:767px) {
+    .services_section .sec_content .box p {
+        height: 75px;
+    }
+
+    .sec_top h2{
+        line-height: 40px;
+    }
+
+    .sec_top p :global(.break_line) {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:575px) {}

@@ -59,7 +59,7 @@ export default function ServicesSection() {
     <section className={`${styles.services_section} sec_padding`}>
       <div className={`${styles.sec_top} text-center`}>
         <h2>Helping Your Story Stand Out</h2>
-        <p className="mt-3 mb-0">
+        <p className="">
           Want to create your legacy or generate sales? Whatever your goals are, with Writers Central USA 
           <span className="break_line"></span>
           by your side, nothing can stop you from achieving them.
@@ -72,8 +72,11 @@ export default function ServicesSection() {
           slidesPerView={5}
           pagination={{ clickable: false }}
           breakpoints={{
+            320: { slidesPerView: 1 },
             576: { slidesPerView: 2 },
-            992: { slidesPerView: 5 },
+            992: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
+            1600: { slidesPerView: 5 }
           }}
           aria-label="Services slider"
         >

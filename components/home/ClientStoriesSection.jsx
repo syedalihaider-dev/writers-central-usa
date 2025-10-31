@@ -44,11 +44,11 @@ export default function ClientStoriesSection() {
   }, [init, initialSlide]);
 
   return (
-    <section className={` ${styles.client_stories_section} sec_padding`}>
+    <section className={`${styles.client_stories_section} sec_padding`}>
       <div className="container">
         <div className={` ${styles.sec_top} text-center`}>
           <h2>Real Stories, Real Results</h2>
-          <p className="mt-3 mb-0">
+          <p>
             At Writer Centra USA, our clients’ success speaks louder than words. Watch these video 
             <span className="break_line"></span> testimonials to see how our services have helped authors, businesses, and professionals 
             <span className="break_line"></span> achieve their publishing goals with confidence.

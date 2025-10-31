@@ -152,8 +152,79 @@
     }
 }
 
-@media screen and (max-width:991px) {}
+@media screen and (max-width:991px) {
+    .about_section .sec_left h2 {
+        line-height: 40px;
+        letter-spacing: 0px;
+    }
 
-@media screen and (max-width:767px) {}
+    .about_section .sec_left h5 {
+        margin: 15px 0;
+    }
 
-@media screen and (max-width:575px) {}
+    .about_section .sec_right .book_img_01 {
+        width: 140px;
+        height: 198px;
+    }
+
+    .about_section .sec_right .book_img_02 {
+        width: 120px;
+        height: 172px;
+    }
+
+    .about_section .sec_right .book_img_03 {
+        width: 125px;
+        height: 210px;
+    }
+
+    .about_section .sec_right .pen_img {
+        width: 81px;
+        height: 80px;
+        bottom: 90px;
+        right: 130px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .about_section .sec_right {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .about_section .sec_left h2 {
+        line-height: 35px;
+        letter-spacing: 0px;
+    }
+
+    .about_section .sec_left h5 {
+        margin: 15px 0;
+    }
+
+    .about_section .sec_right .star_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about_section .sec_right .book_img_01 {
+       width: 100px;
+        height: 145px;
+    }
+
+    .about_section .sec_right .book_img_02 {
+       width: 95px;
+        height: 135px;
+    }
+
+    .about_section .sec_right .book_img_03 {
+        width: 95px;
+        height: 155px;
+    }
+
+    .about_section .sec_right .pen_img {
+        width: 50px;
+        height: 50px;
+        bottom: 50px;
+        right: 80px;
+    }
+}

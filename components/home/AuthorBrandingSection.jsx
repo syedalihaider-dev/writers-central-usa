@@ -19,14 +19,14 @@ export default function AuthorBrandingSection({ data }) {
           <div className="row">
             <div className="col-sm-12 col-md-12">
               <h2>{title}</h2>
-              <p className="mt-3 mb-0">{intro}</p>
+              <p>{intro}</p>
             </div>
           </div>
         </div>
         <div className={styles.sec_content}>
           <div className="row">
             {items.map((item, index) => (
-              <div className="col-sm-12 col-md-3" key={index}>
+              <div className={`col-sm-12 col-md-3 ${styles.custom_col}`} key={index}>
                 <div className={styles.box}>
                   <div className={styles.img}>
                     <Image

@@ -1,206 +1,135 @@
 .header {
-    width: 100%;
-    padding: 30px 0 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
+  width: 100%;
+  padding: 30px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .header :global(.container) {
-    max-width: 1600px;
+  max-width: 1600px;
 }
 
 .logo {
-    display: block;
-    width: 293px;
-    height: 46px;
-    position: relative;
-    z-index: 1;
+  display: block;
+  width: 293px;
+  height: 46px;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li :is(a, span) {
-    color: var(--light-color);
+  color: var(--light-color);
 }
 
 .menu li a,
 .menu li span {
-    display: block;
-    text-decoration: none;
-    padding: 5px 10px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .menu li a::before,
 .menu li span::before,
 .menu li a::after,
 .menu li span::after {
-    content: "";
-    width: 1px;
-    height: 20px;
-    background: var(--primary-color);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) skewX(0deg);
-    z-index: -1;
-    transition: var(--cubic);
+  content: "";
+  width: 1px;
+  height: 20px;
+  background: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) skewX(0deg);
+  z-index: -1;
+  transition: var(--cubic);
 }
 
 .menu li a::before,
 .menu li span::before {
-    left: 0;
+  left: 0;
 }
 
 .menu li a:hover::before,
 .menu li span:hover::before {
-    width: 53%;
-    transform: translateY(-50%) skewX(-40deg);
-    left: -10px;
+  width: 53%;
+  transform: translateY(-50%) skewX(-40deg);
+  left: -10px;
 }
 
 .menu li a::after,
 .menu li span::after {
-    right: 0;
+  right: 0;
 }
 
 .menu li a:hover::after,
 .menu li span:hover::after {
-    width: 53%;
-    transform: translateY(-50%) skewX(-40deg);
-    right: -10px;
+  width: 53%;
+  transform: translateY(-50%) skewX(-40deg);
+  right: -10px;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdownMenu {
-    display: none;
-    position: absolute;
-    background: var(--secondary-color);
-    top: 100%;
-    left: 0;
-    min-width: 790px;
-    padding: 30px;
-    list-style: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  background: var(--secondary-color);
+  top: 100%;
+  left: 0;
+  min-width: 790px;
+  padding: 30px;
+  list-style: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown.open .dropdownMenu {
-    display: block;
-    padding: 15px;
-    column-count: 3;
-    line-height: 40px;
+  display: block;
+  padding: 15px;
+  column-count: 3;
+  line-height: 40px;
 }
 
 .callBtn {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-    color: var(--light-color);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: var(--light-color);
 }
 
 .callBtn .img {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    z-index: 1;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .mobileToggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
 }
 
-@media screen and (max-width:1600px) {
-    .logo {
-        width: 200px;
-        height: 35px;
-    }
-
-    .menu {
-        gap: 15px;
-    }
-}
-
-@media screen and (max-width:1399px) {
-    .header :global(.container) {
-        max-width: 1140px;
-    }
-
-    .logo {
-        width: 180px;
-        height: 30px;
-    }
-
-    .menu {
-        gap: 10px;
-    }
-}
-
-/* @media screen and (max-width:1199px) {
-    .header :global(.container) {
-        max-width: 960px;
-    }
-
-    .callBtn,
-    .header :global(.mybtn) {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: end;
-    }
-}
-
-@media screen and (max-width:991px) {}
-
-@media screen and (max-width:767px) {}
-
-@media screen and (max-width:575px) {}
-
-@media (max-width: 991px) {
-    .navbar {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .mobileToggle {
-        display: block;
-        color: var(--light-color);
-    }
-} */
-
-
-/* ---------- Mobile toggle (hamburger -> X) ---------- */
 .mobileToggle {
   display: none;
   width: 44px;
@@ -221,22 +150,70 @@
   background: var(--light-color);
   margin: 4px auto;
   border-radius: 2px;
-  transition: transform 300ms cubic-bezier(.2,.9,.2,1), opacity 220ms ease;
+  transition: transform 300ms cubic-bezier(.2, .9, .2, 1), opacity 220ms ease;
   transform-origin: center;
 }
 
 .mobileToggle.open .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
+
 .mobileToggle.open .bar:nth-child(2) {
   opacity: 0;
   transform: scaleX(0.2);
 }
+
 .mobileToggle.open .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ---------- Mobile nav panel (slide from left) ---------- */
+.dropdownToggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(79, 70, 229, 0.10);
+  border-radius: 6px;
+}
+
+@media screen and (max-width:1600px) {
+  .logo {
+    width: 200px;
+    height: 35px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width:1399px) {
+  .header :global(.container) {
+    max-width: 1140px;
+  }
+
+  .logo {
+    width: 180px;
+    height: 30px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .header :global(.container) {
+    max-width: 960px;
+  }
+
+  .callBtn,
+  .header :global(.mybtn) {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: end;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar {
     position: fixed;
@@ -247,12 +224,27 @@
     max-width: 360px;
     background: var(--secondary-color);
     transform: translateX(-110%);
-    transition: transform 360ms cubic-bezier(.22,1,.36,1);
+    transition: transform 360ms cubic-bezier(.22, 1, .36, 1);
     z-index: 105;
     display: flex;
+    justify-content: start;
     flex-direction: column;
-    padding: 70px 20px 30px;
-    box-shadow: 10px 0 30px rgba(0,0,0,0.18);
+    padding: 30px 20px 30px;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.18);
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobileToggle {
+    display: block;
+    color: var(--light-color);
   }
 
   .navbar.active {
@@ -275,37 +267,39 @@
   .mobileOverlay {
     position: fixed;
     inset: 0;
-    background: rgba(6,6,7,0.45);
+    background: rgba(6, 6, 7, 0.45);
     z-index: 100;
   }
 
   .dropdown .dropdownMenu {
     position: static;
     background: transparent;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 0;
-    padding-bottom: 0;
-    column-count: 1;
+    padding: 0;
     min-width: 0;
     box-shadow: none;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 360ms cubic-bezier(.22,1,.36,1), opacity 240ms ease;
+    transition: max-height 360ms cubic-bezier(.22, 1, .36, 1), opacity 240ms ease;
     opacity: 0;
   }
 
   .dropdown.open .dropdownMenu {
-    max-height: 1000px;
+    max-height: 226px;
+    background: #132937;
     opacity: 1;
-    margin-top: 8px;
-    margin-bottom: 12px;
+    margin: 0;
+    padding: 0 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    column-count: unset;
   }
 
   .dropdown .dropdownMenu li {
     line-height: 1.8;
     background: none;
-    padding: 6px 6px;
     border-radius: 6px;
   }
 
@@ -332,8 +326,6 @@
   }
 }
 
-.dropdownToggle:focus {
-  outline: none;
-  box-shadow: 0 0 0 5px rgba(79,70,229,0.10);
-  border-radius: 6px;
-}
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {}

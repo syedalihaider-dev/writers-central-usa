@@ -28,10 +28,10 @@ export default function PartnersSection() {
             disableOnInteraction: false,
           }}
           breakpoints={{
-            320: { slidesPerView: 1 },
-            576: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
-            1200: { slidesPerView: 4 },
+            320: { slidesPerView: 2 },
+            576: { slidesPerView: 3 },
+            992: { slidesPerView: 4 },
+            1200: { slidesPerView: 5 },
           }}
           className={styles.swiper_container}
         >

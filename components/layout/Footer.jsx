@@ -112,7 +112,7 @@ export default function Footer() {
                             <li>
                                 <p>
                                     EMAIL US : <br />
-                                    <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
+                                    <a href={`mailto:${EMAIL_ADDRESS}`}>Email Us Now</a>
                                 </p>
                             </li>
                             <li>
