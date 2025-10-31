@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
             <div className="col-sm-12">
                 <div className={`${styles.sec_top} text-center`}>
                     <h2>Our Clients Have A Way With Words</h2>
-                    <p className="mt-3 mb-0">Let's hear the authors who vouch the best for us!</p>
+                    <p>Let's hear the authors who vouch the best for us!</p>
                 </div>
                 <div className={styles.sec_content}>
                     <Swiper modules={[Navigation]} 
@@ -75,8 +75,7 @@ export default function TestimonialsSection() {
                             <div className={styles.img}>
                                 <Image 
                                 src={s.icon} 
-                                width={86} 
-                                height={86} 
+                                fill 
                                 alt="Loading Avatar Image" 
                                 style={{ objectFit: 'contain' }} 
                             />

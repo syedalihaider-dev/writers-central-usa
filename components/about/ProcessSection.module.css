@@ -61,7 +61,7 @@
     transition: var(--cubic);
 }
 
-.box:hover .inner_box_after{
+.box:hover .inner_box_after {
     bottom: 0;
 }
 
@@ -111,10 +111,26 @@
     padding: 250px 0;
 }
 
-.sec_right h2{
+.sec_right h2 {
     font-size: 58px;
 }
 
-.sec_right p{
+.sec_right p {
     margin: 25px 0;
 }
+
+@media screen and (max-width:1600px) {
+    .sec_right {
+        padding: 180px 0;
+    }
+}
+
+@media screen and (max-width:1399px) {}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {}

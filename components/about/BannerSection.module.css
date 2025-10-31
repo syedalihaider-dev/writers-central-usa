@@ -10,7 +10,6 @@
 
 .content h1 {
     font-size: 185px;
-    font-style: normal;
     font-weight: 700;
     line-height: 182px;
     letter-spacing: -3px;
@@ -31,3 +30,69 @@
 /* :global(.ghostwriting-writing) .banner .sec_left {
     padding: 300px 0 140px
 } */
+
+@media screen and (max-width:1600px) {
+    .banner {
+        padding: 200px 0 100px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .content h1 {
+        font-size: 140px;
+        line-height: 150px;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .content h1 {
+        font-size: 120px;
+        line-height: 130px;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .banner {
+        padding: 200px 0 100px;
+    }
+
+    .content h1 {
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: -3px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        padding: 130px 0 60px;
+    }
+
+    .content h1 {
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: -2px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .banner {
+        padding: 130px 0 40px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -2px;
+    }
+}

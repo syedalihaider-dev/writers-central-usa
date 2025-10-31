@@ -19,6 +19,13 @@
     gap: 10px;
 }
 
+.img {
+    width: 86px;
+    height: 86px;
+    position: relative;
+    z-index: 1;
+}
+
 .head h6 {
     margin: 0;
 }
@@ -36,7 +43,30 @@
 
 @media screen and (max-width:991px) {}
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .sec_top h2 {
+        line-height: 30px;
+    }
+
+    .testimonials_section .sec_content {
+        margin-top: 30px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .box p {
+        margin-top: 15px;
+    }
+}
 
 @media screen and (max-width:575px) {
     .sec_top h2 {
